@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.nav-container{
+    background-color: #faf9f5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(23, 152, 0, 0.1)
+}
+.nav-img{
+    width: 100px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #222;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.btn{
+    background-color: #179800;
+    border: none;
+    padding: 12px 20px;
+    color: beige;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    border: #179800 2px solid;
+}
+.login-btn{
+    background-color: transparent !important;
+    color: #179800;
+    border: #179800 2px solid;
+}
+.btn-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#click{
+    display: none;
+}
+.menu-btn{
+    color: #179800;
+    display: none;
+    cursor: pointer;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 80px;
+   
+
+}
+.hero-img{
+    width: 600px;
+}
+.hero-text{
+    text-align: center;
+}
+.hero-heading{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+header{
+     background: linear-gradient(
+    to top,
+    #f0ece5,
+    #f7f5f1
+    );
+}
+.focus{
+    color: #179800;
+}
+.hero-text-para{
+    font-size: 14px;
+    color: rgb(63, 61, 61);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        background-color: rgb(249, 255, 253);
+        width: 100%;
+        padding-bottom: 20px;
+        transition: all 0.9s ease;
+        box-shadow: 0 4px 10px rgba(200, 247, 229, 0.5);
+
+    }
+    .btn-div{
+        margin-top: 120px;
+    }
+    .res{
+        padding-top: 10px;
+    }
+    .login-btn{
+        margin-top: 20px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    #click:checked ~ .responsive{
+        left: 0%;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f057";
+    }
+    .hero-heading{
+    font-size: 28px;
+    }
+    .hero{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
