@@ -147,7 +147,6 @@ h4{
     margin-top: 20px;
 }
 .product{
-    background-color: #179800;
     border-radius: 8px;
 }
 .product-1{
@@ -196,8 +195,65 @@ h4{
     gap: 15px;
     background-color: #fff !important;
 }
+.dawat-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
-
+}
+.arrival{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px; 
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+.card-1{
+    background-color: #114b06;
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px 35px 25px;
+    border-radius: 8px;
+}
+.card-2{
+    background-color: rgb(3, 51, 70);
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 25px;
+}
+.dawat-btn{
+    background-color: #3f8332;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.up-to{
+    color: #eee;
+    font-size: 24px;
+    margin-top: 15px;
+}
+.dawat-img{
+    width: 220px;
+}
+.dawat-btn-2{
+    background-color: skyblue;
+    color: #333;
+}
 
 @media screen and (max-width: 768px) {
     .responsive{
@@ -267,6 +323,13 @@ h4{
     }
     .products-section{
         padding: 40px 0px;
+    }
+    .cards{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
     }
 }
 
