@@ -254,6 +254,60 @@ h4{
     background-color: skyblue;
     color: #333;
 }
+.grocery{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #efebe3;
+    padding: 80px 25px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    justify-content: space-around;
+}
+.grocery-section{
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.grocery-title{
+    text-align: center;
+    font-size: 36px;
+    color: #111;
+}
+.grocery-description{
+    font-size: 15px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#email{
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    width: 250px;
+}
+.email-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.submit-btn{
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    width: 280px;
+    background-color: #179800;
+    color: #eee;
+    font-size: 20px;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     .responsive{
@@ -330,6 +384,14 @@ h4{
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 40px;
+    }
+    .grocery-section{
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+    .grocery{
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
